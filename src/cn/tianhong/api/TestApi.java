@@ -11,11 +11,11 @@ public class TestApi {
      protected static String  URL =   "http://test.openapi.rainbowcn.net" ;
      protected static String  GETMERCHANT_URL =  URL + "/open-rs/product/findMerchantProduct" ;
 
-     protected static String appkey = "acbb3a7ee4858f31";
+     protected static String appkey = "acbb3a7ee4858f32";
      protected static String secret = "c5ffde9121051f9a73b8ad2e85bca118124cc649";
      
      
-     public static String testGetMerchantParam(){
+     public static String testGetMerchantParam(){ 
     	 Map<String, String> apiparamsMap = new TreeMap<String,String>();
          apiparamsMap.put("format", "json");
          apiparamsMap.put("app_key",appkey);
