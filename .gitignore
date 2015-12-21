@@ -1,4 +1,47 @@
+#######开放模式############
 
-#########保守模式############
-!*.java
-!/src/
+###############
+#    folder   #
+###############
+/bin/
+/.settings/
+
+
+###############
+#  fixed file #
+###############
+.gitignore
+.classpath
+.project
+*.exe
+*.txt
+*.def
+*.dsp
+*.lib
+*.doc
+*.dll
+*.lnt
+*.pm
+*.dbg
+*.DBG
+*.o
+*.plg
+*.keep
+
+###############
+#  temp file  #
+###############
+~*
+*.log
+*.cmm
+*.men
+*.ini
+*.fig
+*.cmp
+*.tmp
+
+###############
+#    script   #
+###############
+*.bat
+
