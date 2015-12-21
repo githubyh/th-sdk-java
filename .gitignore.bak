@@ -11,6 +11,8 @@
 #  fixed file #
 ###############
 .gitignore
+.classpath
+.project
 *.exe
 *.txt
 *.def
@@ -20,7 +22,6 @@
 *.dll
 *.lnt
 *.pm
-*.xls
 *.dbg
 *.DBG
 *.o
@@ -45,4 +46,4 @@
 *.bat
 
 #########±£ÊØÄ£Ê½############
-!/src/
+!*.java
