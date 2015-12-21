@@ -1,0 +1,30 @@
+###############
+#    folder   #
+###############
+
+/bin/
+/.settings/
+
+###############
+#  fixed file #
+###############
+.gitignore
+*.exe
+*.txt
+*.def
+*.dsp
+*.lib
+*.doc
+*.dll
+*.lnt
+*.pm
+*.xls
+*.dbg
+*.DBG
+*.o
+*.plg
+*.keep
+
+
+
+!/src/
