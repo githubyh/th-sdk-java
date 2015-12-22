@@ -14,7 +14,7 @@ public class TestApi {
      protected static String appkey = "acbb3a7ee4858f32";
      protected static String secret = "c5ffde9121051f9a73b8ad2e85bca118124cc649";
      
-     
+     //构造参数
      public static String testGetMerchantParam(){ 
     	 Map<String, String> apiparamsMap = new TreeMap<String,String>();
          apiparamsMap.put("format", "json");
