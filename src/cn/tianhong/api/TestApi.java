@@ -32,7 +32,7 @@ public class TestApi {
      
      
      
-
+   //构造拼接
 	public static String buildQuery(Map<String, String> apiparamsMap) {
 		String sign = OpenApiClient.md5Signature(apiparamsMap,secret);
          apiparamsMap.put("sign", sign);
