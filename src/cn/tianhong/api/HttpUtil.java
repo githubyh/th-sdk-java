@@ -151,7 +151,7 @@ public class HttpUtil {
 		HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 		if ((conn instanceof HttpsURLConnection)) {
 			HttpsURLConnection connHttps = (HttpsURLConnection) conn;
-			if (ignoreSSLCheck)
+			if (ignoreSSLCheck && useHttpDns)
 				try {
 					SSLContext ctx = SSLContext.getInstance("TLS");
 					ctx.init(null,
@@ -190,7 +190,7 @@ public class HttpUtil {
 		conn.setRequestMethod(method);
 		conn.setDoInput(true);
 		conn.setDoOutput(true);
-		conn.setRequestProperty("Accept", "text/xml,text/javascript");
+//		conn.setRequestProperty("Accept", "text/xml,text/javascript,application/x-www-form-urlencoded");
 		if (useHttpDns)
 			conn.setRequestProperty("User-Agent", "top-sdk-java-httpdns");
 		else {

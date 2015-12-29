@@ -8,14 +8,14 @@ import java.util.Map;
 import java.util.TreeMap;
 
 public class TestApi {
-     protected static String  URL =   "https://openapi.tianhong.cn" ;
-//     protected static String  URL =   "http://test.openapi.rainbowcn.net" ;
+//     protected static String  URL =   "https://openapi.tianhong.cn" ;
+     protected static String  URL =   "http://test.openapi.rainbowcn.net/open-rs" ;
      protected static String  GETMERCHANT_URL =  URL + "/product/findMerchantProduct" ;
 
-//     protected static String appkey = "acbb3a7ee4858f32";
-//     protected static String secret = "c5ffde9121051f9a73b8ad2e85bca118124cc649";
-     protected static String appkey = "7c9f3f2a3b0f74ad";
-     protected static String secret = "ff1e27fa562d699b0ec1688553404e375f4193d8";
+     protected static String appkey = "acbb3a7ee4858f31";
+     protected static String secret = "c5ffde9121051f9a73b8ad2e85bca118124cc649";
+//     protected static String appkey = "7c9f3f2a3b0f74ad";
+//     protected static String secret = "ff1e27fa562d699b0ec1688553404e375f4193d8";
 
      
      //构造参数
@@ -57,7 +57,7 @@ public class TestApi {
 			String charset = "utf-8";
 		    String ctype = "application/x-www-form-urlencoded;charset=" + charset;
 		    
-			String result = HttpUtil.doPost(GETMERCHANT_URL,ctype,testGetMerchantParam().getBytes(charset),true);
+			String result = HttpUtil.doPost(GETMERCHANT_URL,ctype,testGetMerchantParam().getBytes(charset),false);
 			System.out.print(result);
 		} catch (IOException e) {
 			e.printStackTrace();
