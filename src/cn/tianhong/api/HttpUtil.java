@@ -190,7 +190,6 @@ public class HttpUtil {
 		conn.setRequestMethod(method);
 		conn.setDoInput(true);
 		conn.setDoOutput(true);
-//		conn.setRequestProperty("Accept", "text/xml,text/javascript,application/x-www-form-urlencoded");
 		if (useHttpDns)
 			conn.setRequestProperty("User-Agent", "top-sdk-java-httpdns");
 		else {

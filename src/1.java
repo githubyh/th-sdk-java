@@ -152,13 +152,6 @@ http {
 					proxy_cache_valid any 1m;
 					expires 1h; 
 				}
-				#所有其他的页面均交由tomcat或resin处理
-				location ~ .* {
-					proxy_set_header Host $host;
-					proxy_set_header X-Real-IP $remote_addr;
-					proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-					proxy_pass http://apps-cluster;
-				}
     }
 
 
@@ -218,14 +211,6 @@ http {
 					}
 					location ~ .*.(js|css)?$
 					{ expires 1h; }
-					
-				#所有其他的页面均交由tomcat或resin处理
-				location ~ .* {
-					proxy_set_header Host $host;
-					proxy_set_header X-Real-IP $remote_addr;
-					proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-					proxy_pass http://apps-cluster;
-				}
 			}
 			
 }
