@@ -33,7 +33,7 @@ import com.sun.xml.internal.ws.util.StringUtils;
 public class HttpUtil {
 
 	private static final String DEFAULT_CHARSET = Constants.CHARSET_UTF8;
-	private static final String METHOD_POST = "POST";
+	private static final String METHOD_POST = "POST"; 
 	private static final String METHOD_GET = "GET";
 
 	private static final int CONNECT_TIMEOUT = 3000;

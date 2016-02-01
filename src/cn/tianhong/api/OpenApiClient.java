@@ -136,7 +136,7 @@ public class OpenApiClient  {
 			e.printStackTrace();
 		}
 		return null;
-	}
+	} 
 
 	public String getAppKey() {
 		return appKey;

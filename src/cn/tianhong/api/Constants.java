@@ -7,7 +7,7 @@ package cn.tianhong.api;
  */
 public abstract class Constants {
 
-	/** TOP默认时间格式 **/
+	/** TOP默认时间格式 **/ 
 	public static final String DATE_TIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
 	/** TOP Date默认时区 **/

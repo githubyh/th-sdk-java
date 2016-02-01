@@ -12,7 +12,7 @@ public class TestApi {
      protected static String  URL =   "http://test.openapi.rainbowcn.net/open-rs" ;
      protected static String  GETMERCHANT_URL =  URL + "/product/findMerchantProduct" ;
 
-     protected static String appkey = "acbb3a7ee4858f31";
+     protected static String appkey = "acbb3a7ee4858f3c";
      protected static String secret = "c5ffde9121051f9a73b8ad2e85bca118124cc649";
 //     protected static String appkey = "7c9f3f2a3b0f74ad";
 //     protected static String secret = "ff1e27fa562d699b0ec1688553404e375f4193d8";
